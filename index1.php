@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subscription Management System</title>
     <link rel="stylesheet" href="All-Css/styles1.css" />
-    <!-- Font Awesome CDN -->
+  
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header"  >
       <div class="container">
         <nav class="header-links">
           <a href="home.html" target="main"><i class="fas fa-home"></i> Home</a>
