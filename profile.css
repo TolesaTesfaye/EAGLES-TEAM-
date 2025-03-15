@@ -1,0 +1,116 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+}
+
+#about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.aboutus {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.aboutus::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #3b5998;
+  margin: 10px auto;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+  font-size: 18px;
+  text-align: justify;
+}
+
+h3 {
+  text-align: center;
+  color: cornflowerblue;
+  font-size: 28px;
+  margin: 40px 0;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.team-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 220px; /* This ensures the items will shrink or grow based on available space */
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  max-width: 250px; /* Set a max-width to avoid very large images */
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-card h4 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.team-card p {
+  font-size: 16px;
+  color: #777;
+}
+
+.cta-message {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 24px;
+  color: #3b5998;
+}
+
+.cta-message span {
+  font-weight: bold;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .team-cards {
+    justify-content: center;
+  }
+
+  .team-card {
+    flex: 1 1 45%; /* Shrink the size of the cards on smaller screens */
+    max-width: 45%; /* Ensure the max-width is proportional */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team-card {
+    flex: 1 1 100%; /* On very small screens, the cards will take up the full width */
+    max-width: 100%;
+  }
+}

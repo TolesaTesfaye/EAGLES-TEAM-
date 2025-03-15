@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Plans Section */
+  .plans {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .plans h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #4c6ef5;
+  }
+  
+  .plan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .plan {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .plan h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .plan .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4c6ef5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .plan .price span {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #666;
+  }
+  
+  .plan ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+  }
+  
+  .plan ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .plan ul li i {
+    color: #4c6ef5;
+    margin-right: 0.5rem;
+  }
+  
+  .plan .btn {
+    background: #4c6ef5;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .plan .btn:hover {
+    background: #3b5bdb;
+  }
+  
+  /* Highlight Premium Plan */
+  .plan.premium {
+    border: 2px solid #4c6ef5;
+    position: relative;
+  }
+  
+  .plan.premium::before {
+    content: "Most Popular";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ff5722;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .plan-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .plans h2 {
+      font-size: 2rem;
+    }
+  
+    .plan .price {
+      font-size: 1.75rem;
+    }
+  }

@@ -1,0 +1,133 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Centered Page (No Scroll) */
+body,
+html {
+  height: 100%;
+  overflow: hidden; /* Prevents scrolling */
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Form Container */
+.login-container {
+  background: white;
+  padding: 40px;
+  width: 500px; /* Adjust width */
+  max-width: 90%;
+  height: 450px; /* Adjust height */
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers content */
+}
+
+/* Form Heading */
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Input Groups */
+.input-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+/* Input Focus Effect */
+.input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Login Button */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Hover & Click Effects */
+.login-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+/* Extra Links */
+.extra-links {
+  margin-top: 12px;
+}
+
+.forgot-password {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Sign-up Link */
+.signup-link {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
